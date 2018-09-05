@@ -1,0 +1,81 @@
+html,body{
+	padding:0;
+	margin:0;
+}
+.container{
+	position: relative;
+	margin: 0 auto;
+	width: 100vw;
+    height: 100vh;
+	background-image: url('./img/test.jpg');
+	background-attachment: fixed;
+	background-position: center center;
+    background-size: auto 100%;
+    cursor: pointer;
+	overflow: hidden;
+}
+.content{
+	position: absolute;
+	width: 40vmin;
+	height: 40vmin;
+}
+.wave{
+	position: absolute;
+	top: calc((100% - 10vmin)/2);
+    left: calc((100% - 10vmin)/2);
+	width: 10vmin;
+    height: 10vmin;
+	border-radius: 50%;
+	background-image: url('./img/test.jpg');
+	background-attachment: fixed;
+	background-position: center center;
+	opacity: 0;
+    transition: all .2s;
+}
+.wave-1{
+    background-size: auto 103%;
+    animation: wave 1s ease-out .1s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+.wave-2{
+    background-size: auto 101%;
+    animation: wave 1s ease-out .2s;
+    animation-fill-mode: forwards;
+    z-index: 20;
+}
+.wave-3{
+    background-size: auto 102%;
+    animation: wave 1s ease-out .3s;
+    animation-fill-mode: forwards;
+    z-index: 30;
+}
+.wave-4{
+    background-size: auto 100%;
+    animation: wave 1s ease-out .45s;
+    animation-fill-mode: forwards;
+    z-index: 40;
+}
+
+@keyframes wave {
+    0% {
+        top: calc((100% - 10vmin)/2);
+        left: calc((100% - 10vmin)/2);
+        width: 10vmin;
+        height: 10vmin;
+        opacity: 1;
+    }
+    10% {
+        // opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: calc((100% - 40vmin)/2);
+        left: calc((100% - 40vmin)/2);
+        width: 40vmin;
+        height: 40vmin;
+        opacity: 0;
+    }
+}
