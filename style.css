@@ -41,19 +41,19 @@ html,body{
 }
 .wave-2{
     background-size: auto 101%;
-    animation: wave 1s ease-out .2s;
+    animation: wave 1s ease-out .15s;
     animation-fill-mode: forwards;
     z-index: 20;
 }
 .wave-3{
     background-size: auto 102%;
-    animation: wave 1s ease-out .3s;
+    animation: wave 1s ease-out .2s;
     animation-fill-mode: forwards;
     z-index: 30;
 }
 .wave-4{
     background-size: auto 100%;
-    animation: wave 1s ease-out .45s;
+    animation: wave 1s ease-out .3s;
     animation-fill-mode: forwards;
     z-index: 40;
 }
@@ -65,9 +65,6 @@ html,body{
         width: 10vmin;
         height: 10vmin;
         opacity: 1;
-    }
-    10% {
-        // opacity: 1;
     }
     90% {
         opacity: 1;
