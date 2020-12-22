@@ -11,7 +11,7 @@ $(function() {
 		waveMove(x, y, index++);
 	});
 
-    //注入元素
+	//注入元素
 	function waveMove(x, y, z) {
 		$('.container').append(`<div class="content index${z}" style="
 				top:${y - half_distance}px; left:${x - half_distance}px"
